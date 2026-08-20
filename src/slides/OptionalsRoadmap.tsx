@@ -1,4 +1,3 @@
-import { AlertTriangle } from 'lucide-react'
 import { SectionIntro } from '../components/ui'
 
 interface OptionalFeature {
@@ -57,17 +56,6 @@ export default function OptionalsRoadmap() {
             ))}
           </tbody>
         </table>
-      </div>
-
-      <div className="p-4 bg-amber-950/20 border border-amber-800/40 rounded-xl space-y-1 text-xs text-amber-200">
-        <div className="font-bold flex items-center gap-2 text-amber-400">
-          <AlertTriangle className="w-4 h-4" /> Punto Pendiente de Validación:
-        </div>
-        <p>
-          El Visor 3D figura como opcional en el documento detallado, mientras que en la
-          propuesta de justificación figura como parte del alcance. Se definirá formalmente
-          antes de emitir la versión contractual definitiva.
-        </p>
       </div>
     </div>
   )
