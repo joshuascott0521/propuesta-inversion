@@ -23,10 +23,11 @@ export default function MarginEngine() {
         subtitle="El motor de cotización elimina la variabilidad humana y asegura la rentabilidad de cada venta"
       />
 
-      <div className="p-6 bg-slate-900/80 border border-slate-800 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+      <div className="p-6 bg-slate-900/80 border border-slate-800 rounded-2xl flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-x-3 gap-y-4 text-center">
         {FORMULA_TERMS.map((term, i) => (
           <Fragment key={term}>
-            <div className="p-3 bg-slate-800 rounded-xl text-slate-200 font-mono text-xs w-full md:w-auto">
+            {/* `whitespace-nowrap` mantiene el corchete de cierre pegado al término. */}
+            <div className="px-3 py-3 bg-slate-800 rounded-xl text-slate-200 font-mono text-xs w-full md:w-auto whitespace-nowrap">
               [ {term} ]
             </div>
             {i < FORMULA_TERMS.length - 1 && (
@@ -39,7 +40,7 @@ export default function MarginEngine() {
         <span className="text-emerald-400 font-bold text-xl font-mono" aria-hidden="true">
           =
         </span>
-        <div className="p-4 bg-emerald-950/60 border border-emerald-500/50 rounded-xl text-emerald-300 font-bold text-sm w-full md:w-auto">
+        <div className="px-4 py-3 bg-emerald-950/60 border border-emerald-500/50 rounded-xl text-emerald-300 font-bold text-sm w-full md:w-auto whitespace-nowrap">
           PRECIO PROTEGIDO
         </div>
       </div>
