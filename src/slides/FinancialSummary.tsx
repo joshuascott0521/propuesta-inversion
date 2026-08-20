@@ -1,4 +1,3 @@
-import { AlertTriangle } from 'lucide-react'
 import { SectionIntro } from '../components/ui'
 
 const VERSION = {
@@ -52,15 +51,6 @@ export default function FinancialSummary() {
           <span className="text-2xl font-black font-mono text-cyan-300 whitespace-nowrap">
             {VERSION.total}
           </span>
-        </div>
-      </div>
-
-      <div className="max-w-3xl mx-auto p-4 bg-amber-950/30 border border-amber-800/60 rounded-xl flex items-start gap-3 text-amber-200 text-xs">
-        <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-        <div>
-          <strong className="text-amber-400">Punto Pendiente de Validación Comercial:</strong>{' '}
-          No se mezclan las cifras ni se inventan justificaciones. La versión económica
-          definitiva será alineada formalmente en la sesión de validación de alcance.
         </div>
       </div>
     </div>
